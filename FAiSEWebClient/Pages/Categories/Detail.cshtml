@@ -1,0 +1,96 @@
+﻿@page "{slug}_{id:int}"
+@using FAiSEWebClient.AppCode
+@model FAiSEWebClient.Pages.Categories.CategoryDetailModel
+@{
+    ViewData["Title"] = Model.Category?.CategoryName ?? "Danh mục";
+    ViewData["Description"] = Model.Category?.CategoryName;
+}
+<section class="blog-section pt-100 pb-70">
+    <div class="container">
+        <partial name="Client/_Breadcrumb" model="Model.Breadcrumb" />
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h2 class="mb-4 text-primary fw-bold">@Model.Category?.CategoryName</h2>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-6">
+                @if (Model.Blogs.Count == 1 && Model.TotalPages == 1)
+                {
+                    var blog = Model.Blogs.First();
+                    <div class="single-post">
+                        <h3>@blog.Title</h3>
+                        <p class="text-muted fst-italic">Cập nhật: @blog.DateUpdated.ToString("dd/MM/yyyy")</p>
+                        @Html.Raw(blog.Ncontent)
+                    </div>
+                }
+                else if (Model.Blogs.Count >= 1)
+                {
+                    // 👉 Trường hợp có từ 2 bài trở lên HOẶC có phân trang
+                    <div class="row g-4">
+                        @foreach (var blog in Model.Blogs)
+                        {
+                            <div class="col-md-4">
+                                <div class="card h-100 shadow-sm border-0">
+                                            <img src="@(!string.IsNullOrEmpty(blog.Avatar) ? blog.Avatar : "/Clients/Images/default-image.png")" class="card-img-top img-loading skeleton-img"
+                                         onload="this.classList.remove('skeleton-img')" alt="@blog.Title" onerror="this.onerror=null; this.src='/Clients/Images/default-image.png'" />
+                                    <div class="card-body">
+                                        <h5 class="card-title">@blog.Title</h5>
+                                        <p class="text-muted small mb-2">
+                                            🕒 Đăng ngày: @blog.DateUpdated.ToString("dd/MM/yyyy")
+                                        </p>
+                                        <p class="card-text">@Html.Raw(blog.Summary)</p>
+                                        <a asp-page="/Client/Detail"
+                                           asp-route-slug="@SlugHelper.GenerateSlug(blog.Title)"
+                                           asp-route-id="@blog.Id"
+                                           class="btn btn-outline-primary btn-sm">Đọc tiếp</a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+                    @* PHÂN TRANG *@
+                    @if (Model.TotalPages > 1)
+                    {
+                        <nav class="mt-4">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item @(Model.CurrentPage == 1 ? "disabled" : "")">
+                                    <a class="page-link"
+                                       asp-route-page="/Categories/Detail"
+                                       asp-route-slug="@SlugHelper.GenerateSlug(Model.Category.CategoryName)"
+                                       asp-route-id="@Model.Category.CategoryId"
+                                       asp-route-p="@(Model.CurrentPage - 1)">«</a>
+                                </li>
+
+                                @for (int i = 1; i <= Model.TotalPages; i++)
+                                {
+                                    <li class="page-item @(Model.CurrentPage == i ? "active" : "")">
+                                        <a class="page-link"
+                                           asp-route-page="/Categories/Detail"
+                                           asp-route-slug="@SlugHelper.GenerateSlug(Model.Category.CategoryName)"
+                                           asp-route-id="@Model.Category.CategoryId"
+                                           asp-route-p="@i">@i</a>
+                                    </li>
+                                }
+
+                                <li class="page-item @(Model.CurrentPage == Model.TotalPages ? "disabled" : "")">
+                                    <a class="page-link"
+                                       asp-route-page="/Categories/Detail"
+                                       asp-route-slug="@SlugHelper.GenerateSlug(Model.Category.CategoryName)"
+                                       asp-route-id="@Model.Category.CategoryId"
+                                       asp-route-p="@(Model.CurrentPage + 1)">»</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    }
+                }
+                else
+                {
+                    <div class="alert alert-danger">Không có bài viết nào trong danh mục này.</div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - FAiSE</title>
+    <meta name="description" content="@ViewData["Description"]" />
+    <meta property="og:title" content="@ViewData["Title"]" />
+    <meta property="og:description" content="@ViewData["Description"]" />
+    <meta property="og:image" content="@ViewData["Image"]" />
+    <link rel="stylesheet" href="~/Clients/Images/logo.ico" />
+
+    <!-- Bootstrap Min CSS -->
+    <link rel="stylesheet" href="~/Clients/CSS/bootstrap.min.css">
+    <!-- Animate Min CSS -->
+    <link rel="stylesheet" href="~/Clients/CSS/animate.min.css">
+    <!-- Pe-icon-7 CSS -->
+    <link rel="stylesheet" href="~/Clients/CSS/pe-icon-7-stroke.css">
+    <!-- Font Awesome Min CSS -->
+    <link rel="stylesheet" href="~/Clients/CSS/fontawesome.min.css">
+    <!-- Mran Menu CSS -->
+    <link rel="stylesheet" href="~/Clients/CSS/meanmenu.css">
+    <!-- Owl Carousel Min CSS -->
+    <link rel="stylesheet" href="~/Clients/CSS/owl.carousel.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="~/Clients/CSS/style.css?v=@DateTime.Now.Ticks">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="~/Clients/CSS/responsive.css">
+</head>
+<body>
+    @await Component.InvokeAsync("Navbar")
+            @RenderBody()
+
+    <partial name="Client/_Footer" />
+    <!-- Start Go Top Section -->
+    <div class="go-top">
+        <i class="fas fa-chevron-up"></i>
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!-- End Go Top Section -->
+    <!-- jQuery Min JS -->
+    <script src="~/Clients/Scripts/jquery.min.js"></script>
+    <!-- Bootstrap Min JS -->
+    <script src="~/Clients/Scripts/bootstrap.min.js"></script>
+    <!-- MeanMenu JS  -->
+    <script src="~/Clients/Scripts/jquery.meanmenu.js?v=@DateTime.Now.Ticks"></script>
+    <!-- Appear Min JS -->
+    <script src="~/Clients/Scripts/jquery.appear.min.js"></script>
+    <!-- CounterUp Min JS -->
+    <script src="~/Clients/Scripts/jquery.waypoints.min.js"></script>
+    <script src="~/Clients/Scripts/jquery.counterup.min.js"></script>
+    <script src="~/Clients/Scripts/owl.carousel.min.js"></script>
+    <!-- Main JS -->
+    <script src="~/Clients/Scripts/main.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

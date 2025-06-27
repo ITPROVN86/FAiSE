@@ -1,0 +1,149 @@
+﻿@page
+@model FAiSEAdmin.Pages.Blogs.CreateModel
+
+@{
+    ViewData["Title"] = "Tạo mới Chuyên mục";
+}
+
+<header class="panel-heading">
+    Tạo mới Chuyên mục
+</header>
+<div class="processing-preview hidden">
+</div>
+<div class="panel-body">
+    <div class="row">
+        <div class="col-lg-12 ">
+            <form method="post" class="form-horizontal" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label class="col-lg-2 col-sm-2 control-label">Tiêu đề bài viết</label>
+                    <div class="col-lg-6">
+                        <input asp-for="Blog.Title" class="form-control" placeholder="Mời nhập tiêu đề của bài viết" />
+                        <span asp-validation-for="Blog.Title" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-2 col-sm-2 control-label">Ảnh đại diện</label>
+                    <div class="col-lg-6">
+                        <input id="ImageFile" type="file" accept="image/*" />
+
+                        <!-- Hiển thị ảnh xem trước -->
+                        <img id="preview"
+                             src="@Url.Content(ViewBag.Anh == null ? "~/images/avatar1.jpg" : ViewBag.Anh)"
+                             class="rounded-circle" height="40" />
+
+                        <!-- Input ẩn để lưu đường dẫn ảnh sau khi upload -->
+                        <input type="hidden" id="AvatarPath" asp-for="Blog.Avatar" />
+
+                        <span asp-validation-for="Blog.Avatar" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-2 col-sm-2 control-label">Danh mục Cha</label>
+                    <div class="col-lg-6">
+                        <select id="parentCategory" asp-for="ParentCategoryId" class="form-control">
+                            <option value="">-- Chọn danh mục cha --</option>
+                            @foreach (var category in Model.ParentCategories)
+                            {
+                                <option value="@category.CategoryId">@category.CategoryName</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-2 col-sm-2 control-label">Danh mục Con</label>
+                    <div class="col-lg-6">
+                        <select id="childCategory" asp-for="SelectedCategoryId" class="form-control">
+                            <option value="">-- Chọn danh mục con --</option>
+                        </select>
+                    </div>
+                </div>
+
+                <input type="hidden" id="selectedCategoryId" name="Blog.CategoryId" />
+                <div class="form-group">
+                    <label class="col-lg-2 col-sm-2 control-label">Tóm tắt</label>
+                    <div class="col-lg-6">
+                        @*      <textarea asp-for="Blog.Summary" class="form-control" rows="5"></textarea>
+                        <span asp-validation-for="Blog.Summary" class="text-danger"></span> *@
+                      @*   <input type="hidden" asp-for="Blog.Summary" id="hiddenSummary"> *@
+                        @* <div id="editorSummary"></div> *@
+                        <textarea asp-for="Blog.Summary" class="form-control" rows="5"></textarea>
+                        <span asp-validation-for="Blog.Summary" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-2 col-sm-2 control-label">Nội dung</label>
+                    <div class="col-lg-6">
+                        <input type="hidden" asp-for="Blog.Ncontent" id="hiddenNcontent">
+                        <textarea id="editor"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-2 col-sm-2 control-label">&nbsp;</label>
+                    <div class="col-lg-6">
+                        <a asp-page="Index" class="btn btn-success">Trở về</a>&nbsp;
+                        <input type="submit" id="btnSave" value="Tạo mới" class="btn btn-primary" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <script>
+            Swal.fire({
+                icon: 'error',
+                title: 'Lỗi tạo dữ liệu!',
+                text: '@Html.Raw(TempData["ErrorMessage"])',
+            });
+        </script>
+    }
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        $(document).ready(function () {
+            $("#parentCategory").change(function () {
+                var parentId = $(this).val();
+                $("#childCategory").html('<option value="">-- Chọn danh mục con --</option>');
+
+                if (parentId) {
+                    $.ajax({
+                        url: '/Blogs/Create?handler=ChildCategories',
+                        type: 'GET',
+                        data: { parentId: parentId },
+                        success: function (data) {
+                            if (data.length > 0) {
+                                $.each(data, function (index, item) {
+                                    $("#childCategory").append($('<option>', {
+                                        value: item.categoryId,
+                                        text: item.categoryName
+                                    }));
+                                });
+                            }
+                        }
+                    });
+                }
+            });
+
+            // Cập nhật danh mục khi chọn
+            $("#childCategory, #parentCategory").change(function () {
+                var childId = $("#childCategory").val();
+                var parentId = $("#parentCategory").val();
+
+                if (childId) {
+                    $("#SelectedCategoryId").val(childId); // Nếu có danh mục con, lấy ID của con
+                } else {
+                    $("#SelectedCategoryId").val(parentId); // Nếu không có danh mục con, lấy ID của cha
+                }
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/ckeditor5-classic-free-full-feature@35.4.1/build/ckeditor.min.js"></script>
+    <script src="~/js/controllers/ckeditorBlog.js?v=@DateTime.Now.ToString("yyyyMMddHHmmss")"></script>
+}
+

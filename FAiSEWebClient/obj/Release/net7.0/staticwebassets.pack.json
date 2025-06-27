@@ -1,0 +1,477 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\obj\\Release\\net7.0\\scopedcss\\projectbundle\\FAiSEWebClient.bundle.scp.css",
+      "PackagePath": "staticwebassets\\FAiSEWebClient.u9pqeuodel.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\CSS\\animate.min.css",
+      "PackagePath": "staticwebassets\\Clients\\CSS\\animate.min.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\CSS\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Clients\\CSS\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\CSS\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\Clients\\CSS\\fontawesome.min.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\CSS\\meanmenu.css",
+      "PackagePath": "staticwebassets\\Clients\\CSS\\meanmenu.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\CSS\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\Clients\\CSS\\owl.carousel.min.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\CSS\\pe-icon-7-stroke.css",
+      "PackagePath": "staticwebassets\\Clients\\CSS\\pe-icon-7-stroke.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\CSS\\responsive.css",
+      "PackagePath": "staticwebassets\\Clients\\CSS\\responsive.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\CSS\\style.css",
+      "PackagePath": "staticwebassets\\Clients\\CSS\\style.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Fonts\\Pe-icon-7-stroke.eot",
+      "PackagePath": "staticwebassets\\Clients\\Fonts\\Pe-icon-7-stroke.eot"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Fonts\\Pe-icon-7-stroke.svg",
+      "PackagePath": "staticwebassets\\Clients\\Fonts\\Pe-icon-7-stroke.svg"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Fonts\\Pe-icon-7-stroke.ttf",
+      "PackagePath": "staticwebassets\\Clients\\Fonts\\Pe-icon-7-stroke.ttf"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Fonts\\Pe-icon-7-stroke.woff",
+      "PackagePath": "staticwebassets\\Clients\\Fonts\\Pe-icon-7-stroke.woff"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\Clients\\Fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Fonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\Clients\\Fonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\Clients\\Fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\Clients\\Fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\Clients\\Fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Fonts\\fa-brands-400d41d.eot",
+      "PackagePath": "staticwebassets\\Clients\\Fonts\\fa-brands-400d41d.eot"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\Clients\\Fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\Clients\\Fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\Clients\\Fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Fonts\\fa-regular-400d41d.eot",
+      "PackagePath": "staticwebassets\\Clients\\Fonts\\fa-regular-400d41d.eot"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\Clients\\Fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Fonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\Clients\\Fonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\Clients\\Fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\Clients\\Fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\Clients\\Fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Fonts\\fa-solid-900d41d.eot",
+      "PackagePath": "staticwebassets\\Clients\\Fonts\\fa-solid-900d41d.eot"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Images\\default-image.png",
+      "PackagePath": "staticwebassets\\Clients\\Images\\default-image.png"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Images\\home-bg.jpg",
+      "PackagePath": "staticwebassets\\Clients\\Images\\home-bg.jpg"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Images\\home-font.png",
+      "PackagePath": "staticwebassets\\Clients\\Images\\home-font.png"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Images\\human-ai.png",
+      "PackagePath": "staticwebassets\\Clients\\Images\\human-ai.png"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Images\\logo.ico",
+      "PackagePath": "staticwebassets\\Clients\\Images\\logo.ico"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Images\\logo.png",
+      "PackagePath": "staticwebassets\\Clients\\Images\\logo.png"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Images\\slider-1.jpg",
+      "PackagePath": "staticwebassets\\Clients\\Images\\slider-1.jpg"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Images\\slider-2.jpg",
+      "PackagePath": "staticwebassets\\Clients\\Images\\slider-2.jpg"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Images\\slider-3.jpg",
+      "PackagePath": "staticwebassets\\Clients\\Images\\slider-3.jpg"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Scripts\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Clients\\Scripts\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Scripts\\jquery.appear.min.js",
+      "PackagePath": "staticwebassets\\Clients\\Scripts\\jquery.appear.min.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Scripts\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\Clients\\Scripts\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Scripts\\jquery.meanmenu.js",
+      "PackagePath": "staticwebassets\\Clients\\Scripts\\jquery.meanmenu.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Scripts\\jquery.min.js",
+      "PackagePath": "staticwebassets\\Clients\\Scripts\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Scripts\\jquery.waypoints.min.js",
+      "PackagePath": "staticwebassets\\Clients\\Scripts\\jquery.waypoints.min.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Scripts\\main.js",
+      "PackagePath": "staticwebassets\\Clients\\Scripts\\main.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Scripts\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\Clients\\Scripts\\owl.carousel.min.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Upload\\cicd2024.jpg",
+      "PackagePath": "staticwebassets\\Clients\\Upload\\cicd2024.jpg"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Upload\\hackaithon2025.jpg",
+      "PackagePath": "staticwebassets\\Clients\\Upload\\hackaithon2025.jpg"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\Clients\\Upload\\innocodecamp.jpg",
+      "PackagePath": "staticwebassets\\Clients\\Upload\\innocodecamp.jpg"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\FU\\Demo\\2025\\FAiSE\\FAiSEWebClient\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.FAiSEWebClient.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.FAiSEWebClient.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.build.FAiSEWebClient.props",
+      "PackagePath": "build\\FAiSEWebClient.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.FAiSEWebClient.props",
+      "PackagePath": "buildMultiTargeting\\FAiSEWebClient.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildTransitive.FAiSEWebClient.props",
+      "PackagePath": "buildTransitive\\FAiSEWebClient.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

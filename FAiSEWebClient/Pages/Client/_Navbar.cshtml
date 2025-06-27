@@ -1,0 +1,71 @@
+﻿@using FAiSEBussiness.Models
+@using FAiSEWebClient.AppCode
+@model List<Category>
+<div class="navbar-area">
+    <!--Mobile App-->
+    <div class="techmax-responsive-nav index-navber-responsive">
+        <div class="container">
+            <div class="techmax-responsive-menu">
+                <div class="logo">
+                    <a href="~/">
+                        <img src="~/Clients/Images/logo.png" class="white-logo" alt="logo">
+                        <img src="~/Clients/Images/logo.png" class="black-logo" alt="logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="techmax-nav index-navber">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="~/">
+                    <img src="~/Clients/Images/logo.png" width="100px" class="white-logo" alt="logo">
+                    <img src="~/Clients/Images/logo.png" width="100px" class="black-logo" alt="logo">
+                </a>
+                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent" style="display: block;">
+                    <ul class="navbar-nav">
+                        @foreach (var parent in Model)
+                        {
+                            if (parent.InverseParentCategory.Any())
+                            {
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                        @parent.CategoryName
+                                    </a>
+                                    <ul class="dropdown-menu">
+
+                                        @foreach (var child in parent.InverseParentCategory)
+                                        {
+                                            if (string.IsNullOrEmpty(child.LinkUrl))
+                                            {
+                                                <li><a class="dropdown-item" href="~/Category/@SlugHelper.GenerateSlug(child.CategoryName)_@child.CategoryId">@child.CategoryName</a></li>
+                                            }
+                                            else
+                                            {
+                                                <li>
+                                                                    <a class="dropdown-item" target="_blank" href="@child.LinkUrl">@child.CategoryName</a>
+                                                </li>
+                                            }
+                                        }
+
+                                    </ul>
+                                </li>
+                            }
+                            else
+                            {
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="~/Category/@SlugHelper.GenerateSlug(parent.CategoryName)_@parent.CategoryId">@parent.CategoryName</a>
+                                </li>
+                            }
+                        }
+
+                        <li class="nav-item">
+                            <a href="~/Contact" class="nav-link">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+﻿@page "{slug}_{id:int}"
+@model DetailModel
+@{
+    ViewData["Title"] = Model.BlogDetail.Title;
+    ViewData["Description"] = Model.BlogDetail.Summary ?? Model.BlogDetail.Ncontent.Substring(0, 150);
+    ViewData["Image"] = Model.BlogDetail.Avatar;
+}
+<section class="blog-detail-section pt-100 pb-70">
+    <div class="container">
+        <partial name="Client/_Breadcrumb" model="Model.Breadcrumb" />
+        <div class="blog-detail-content">
+            <h2>@Model.BlogDetail.Title</h2>
+            <p class="text-muted small mb-2">
+                🕒 Đăng ngày: @Model.BlogDetail.DateUpdated.ToString("dd/MM/yyyy")
+            </p>
+          @*   <img src="@(!string.IsNullOrEmpty(Model.BlogDetail.Avatar) ? Model.BlogDetail.Avatar : "/Clients/Images/default-image.png")" alt="@Model.BlogDetail.Title" onerror="this.onerror=null; this.src='/Clients/Images/default-image.png'" /> *@
+            <p>@Html.Raw(Model.BlogDetail.Ncontent)</p>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,87 @@
+﻿@page
+@model FAiSEWebClient.Pages.ContactModel
+@{
+	ViewData["Title"] = "Liên hệ";
+}
+<section class="blog-section pt-100 pb-70">
+	<div class="container">
+		<nav aria-label="breadcrumb" class="mb-4">
+			<ol class="breadcrumb">
+
+						<li class="breadcrumb-item">
+							<a href="~/">Trang chủ</a>
+						</li>
+
+						<li class="breadcrumb-item active" aria-current="page">Liên hệ</li>
+			</ol>
+		</nav>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-title">
+					<h2>Liên hệ với chúng tôi</h2>
+				</div>
+			</div>
+			<div class="col-lg-12 col-md-6">
+				@if (Model.ResultMessage != null)
+				{
+					<div class="alert alert-info mt-3">@Model.ResultMessage</div>
+				}
+				<form method="post">
+					<div class="form-group">
+						<label>Họ tên</label>
+						<input asp-for="ContactInfo.Name" class="form-control" />
+						<span asp-validation-for="ContactInfo.Name" class="text-danger"></span>
+					</div>
+
+					<div class="form-group">
+						<label>Email</label>
+						<input asp-for="ContactInfo.Email" class="form-control" />
+						<span asp-validation-for="ContactInfo.Email" class="text-danger"></span>
+					</div>
+
+					<div class="form-group">
+						<label>Tiêu đề</label>
+						<input asp-for="ContactInfo.Subject" class="form-control" />
+						<span asp-validation-for="ContactInfo.Subject" class="text-danger"></span>
+					</div>
+
+					<div class="form-group">
+						<label>Nội dung</label>
+						<textarea asp-for="ContactInfo.Message" rows="5" class="form-control"></textarea>
+						<span asp-validation-for="ContactInfo.Message" class="text-danger"></span>
+					</div>
+
+					<button type="submit" id="btnSend" class="btn btn-primary">
+						<span id="btnText">Gửi</span>
+						<span id="spinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+					</button>
+
+				</form>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+	<script>
+		$(function () {
+			$("form").on("submit", function () {
+				if (!$(this).valid()) {
+					// Form không hợp lệ → dừng submit, không chạy loading
+					return;
+				}
+				// Disable nút gửi
+				$("#btnSend").prop("disabled", true);
+
+				// Đổi chữ "Gửi" -> "Đang gửi..."
+				$("#btnText").text("Đang gửi...");
+
+				// Hiện spinner
+				$("#spinner").removeClass("d-none");
+			});
+		});
+	</script>
+}

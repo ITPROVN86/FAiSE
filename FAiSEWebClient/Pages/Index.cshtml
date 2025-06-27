@@ -1,0 +1,14 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Trang chủ";
+    ViewData["Description"] = "Xây dựng nền tảng mở để sinh viên FPT có thể học AI thông qua dự án thực tế, dữ liệu thật, sản phẩm thật. Phát triển thành vườn ươm khởi nghiệp công nghệ AI – Blockchain – IoT ngay trong trường đại học.";
+    ViewData["Image"] = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host}/Clients/Images/logo.png";
+}
+<partial name="Client/_Banner" />
+<partial name="Client/_Solution" />
+<partial name="Client/_Blog" model="Model" />
+<partial name="Client/_Services" />
+<br/>
+<partial name="Client/_Counter" />
+@* <partial name="Client/_Project" /> *@

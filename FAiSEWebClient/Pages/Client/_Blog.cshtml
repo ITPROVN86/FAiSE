@@ -1,0 +1,45 @@
+﻿@using FAiSEWebClient.AppCode
+<section class="blog-section pt-100 pb-70">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-title">
+					<h2>Thông báo &amp; Tin tức</h2>
+				</div>
+			</div>
+			@foreach (var blog in Model.Blogs)
+			{
+				<div class="col-lg-4 col-md-6">
+					<div class="blog-item">
+					<div class="blog-image">
+							<a href="~/@SlugHelper.GenerateSlug(blog.Title)_@blog.Id">
+
+									<img src="@(!string.IsNullOrEmpty(blog.Avatar) ? blog.Avatar : "/Clients/Images/default-image.png")" alt="image" class="card-img-top img-loading skeleton-img"
+									 onload="this.classList.remove('skeleton-img')" onerror="this.onerror=null; this.src='/Clients/Images/default-image.png'">
+							</a>
+					</div>
+					<div class="single-blog-item">
+						<div class="blog-content">
+							<h3>
+									<a href="~/@SlugHelper.GenerateSlug(blog.Title)_@blog.Id">
+									@blog.Title
+								</a>
+							</h3>
+								<p class="text-muted small mb-2">
+									🕒 Đăng ngày: @blog.DateUpdated.ToString("dd/MM/yyyy")
+								</p>
+								@Html.Raw(blog.Summary)
+							<div class="blog-btn">
+									<a href="~/@SlugHelper.GenerateSlug(blog.Title)_@blog.Id" class="default-btn blog-btn-one">
+		
+										Đọc tiếp <span></span>
+									</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			}
+		</div>
+	</div>
+</section>

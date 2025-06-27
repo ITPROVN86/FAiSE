@@ -1,0 +1,79 @@
+﻿@page
+@model LoginModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Trang Đăng nhập - FAiSE</title>
+    <!--Core CSS -->
+    <link href="~/bs3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/bootstrap-reset.css" rel="stylesheet">
+    <link href="~/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Custom styles for this template -->
+    <link href="~/css/style.css" rel="stylesheet">
+    <link href="~/css/style-responsive.css" rel="stylesheet" />
+</head>
+<body class="login-body">
+    <div class="container">
+
+        <div class="form-signin">
+            <h2 class="form-signin-heading">Trang đăng nhập</h2>
+            <div class="login-wrap">
+                <div class="form-group">
+                   @*  <a asp-page="/Account/ExternalLogin" asp-route-provider="Google">
+                        <button class="btn btn-danger"><i class="fa fa-google-plus"></i> Login with Google</button>
+                    </a> *@
+                    <form method="post">
+                        <button type="submit" asp-page-handler="GoogleLogin" id="googleLogin" class="btn btn-primary">
+                            Đăng nhập với Google
+                        </button>
+                    </form>
+                    @if (TempData["ErrorMessage"] != null)
+                    {
+                        <script>
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Lỗi đăng nhập!',
+                                text: '@Html.Raw(TempData["ErrorMessage"])',
+                            });
+                        </script>
+                    }
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="~/js/jquery.js"></script>
+    <script src="~/bs3/js/bootstrap.min.js"></script>
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+    <script>
+            document.getElementById("googleLogin").addEventListener("click", function () {
+                fetch('/Account/Login?handler=GoogleLogin', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+                    .then(response => response.json())  // Đọc JSON response
+                    .then(data => {
+                        if (data.success) {
+                            window.location.href = data.url; // Chuyển hướng đến Google Login
+                        } else {
+                            alert("Đăng nhập thất bại!");
+                        }
+                    })
+                    .catch(error => console.error("Lỗi đăng nhập:", error));
+            });
+    </script>
+</body>
+</html>
